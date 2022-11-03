@@ -1,15 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to 김민혁's Homepage(21900102)</title>
 </head>
 <body>
-<h1>Form</h1>
 <form action="form_ok.jsp" method="post">
-    Title : <input type="text" name="title"> <br />
-    contents : <input type="text" name="contents"> <br />
-    <input type="submit">
+    <h2>자가 건강 체크</h2>
+    <strong>1. 이름?</strong><br>
+    <input type="text" id="name" name="name" value="홍길동"><br>
+
+    <strong>2. 성별?</strong><br>
+    <input type="radio" id="man" name="sex" value="남자">
+    <label for="man">남자</label><br>
+    <input type="radio" id="woman" name="sex" value="여자">
+    <label for="woman">여자</label><br><br>
+
+    <strong>3. 생년월일?</strong><br>
+    <input type="date" id=birth name=birth value="xxx" min="yyy" max="zzz"><br><br>
+
+    <strong>4. 짜고 단 것을 좋아하나요?(중복가능)</strong><br>
+    <input type="checkbox" id="taste1" name="taste1" value="짠것 ">
+    <label for="taste1"> 짠 것</label><br>
+    <input type="checkbox" id="taste2" name="taste2" value="단것 ">
+    <label for="taste2"> 매운 것</label><br><br>
+
+    <strong>5. 흡연을 하시나요?(한다면 얼마나?)</strong><br>
+    <select name="smoke" id="smoke">
+        <option value="">--선택--</option>
+        <option value="안함">안함</option>
+        <option value="반갑이하">반갑이하</option>
+        <option value="반갑~한갑">반갑~한갑</option>
+        <option value="한갑이상">한갑이상</option>
+    </select><br><br>
+
+    <strong>6. 평균 수면시간은?</strong><br>
+    <select name="sleep" id="sleep">
+        <option value="">--선택--</option>
+        <option value="5시간">5시간</option>
+        <option value="6시간">6시간</option>
+        <option value="7시간">7시간</option>
+        <option value="8시간">8시간</option>
+        <option value="9시간">9시간 이상</option>
+    </select><br><br>
+
+    <strong>7. 일주일 운동횟수는?</strong><br>
+    <input type="radio" id="lessexercise" name="exercise" value="3일 미만">
+    <label for="lessexercise">3일 미만</label><br>
+    <input type="radio" id="normalexercise" name="exercise" value="3일 이상">
+    <label for="normalexercise">3일 이상</label><br>
+    <input type="radio" id="moreexercise" name="exercise" value="5일 이상">
+    <label for="normalexercise">5일 이상</label><br><br>
+
+    <strong>8. 하루에 물을 얼마나 마시나요?</strong><br>
+    <select name="water" id="water">
+        <option value="">--선택--</option>
+        <option value="1L미만">1L미만</option>
+        <option value="1L이상">1L이상</option>
+        <option value="2L이상">2L이상</option>
+    </select><br><br>
+
+    <strong>9. 본인은 스스로 건강하다고 느끼나요?</strong><br>
+    <input type="radio" id="yes" name="feel" value="네">
+    <label for="yes">네</label><br>
+    <input type="radio" id="no" name="feel" value="아니요">
+    <label for="no">아니요</label><br><br>
+
+    <strong>10. Life motto?</strong><br>
+    <textarea name="statement" cols="100" rows="6" placeholder="내용을 적어주세요"></textarea><br><br>
+    <input type="submit" value="Submit">
 </form>
+
 </body>
 </html>
